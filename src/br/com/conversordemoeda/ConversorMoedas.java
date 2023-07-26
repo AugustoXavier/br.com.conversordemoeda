@@ -24,6 +24,14 @@ public class ConversorMoedas {
 			System.out.println("A Converção de " + moeda +  " Para Reais é: " + ConversorMoedas.converter(cotacao,d));
 			
 		}
+		public static void saida2(double cotacao, String moeda) {
+
+			System.out.println("Digite um valor Em "+ moeda + " :"  );
+			ValorEmReais = new Scanner(System.in);
+			double d = ValorEmReais.nextDouble();
+			System.out.println("A Converção de Reais  Para" + moeda + " e: "+ ConversorMoedas.converter(cotacao,d));
+			
+		}
 
 
 	

@@ -12,7 +12,11 @@ public class ConversorMoedas {
 			double total = moedaReal * moedaCambio;
 			return total;
 			}
-		
+		public static double converter2(double moedaCambio, double leitor ) {
+			double moedaReal = leitor;
+			double total = moedaReal / moedaCambio;
+			return total;
+		}
 
 
 
@@ -29,7 +33,7 @@ public class ConversorMoedas {
 			System.out.println("Digite um valor Em "+ moeda + " :"  );
 			ValorEmReais = new Scanner(System.in);
 			double d = ValorEmReais.nextDouble();
-			System.out.println("A Converção de Reais  Para" + moeda + " e: "+ ConversorMoedas.converter(cotacao,d));
+			System.out.println("A Converção de Reais  Para" + moeda + " e: "+ ConversorMoedas.converter2(cotacao,d));
 			
 		}
 
